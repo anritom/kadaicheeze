@@ -1,0 +1,340 @@
+/* ここから下に記載していく */
+body{
+    display: flex;
+    justify-content: center;
+}
+main {
+    width: 1200px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+/* headerここから */
+
+header {
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    padding-left:80px;
+    padding-right:80px;
+    display:flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    justify-content: space-between; /* 要素間のスペースを均等に */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    display: flex;
+}
+/* headerここまで */
+
+/* メインビジュアルここから */
+.mv{
+    width: 100vw;
+    background-image: url(../img/mainbg.png);
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center
+}
+.mvc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center
+}
+.mvc-title{
+    color: #fff;
+}
+.mvc-subtitle{
+    color: #fff;
+    font-weight: 100;
+}
+
+/* メインビジュアルここまで */
+
+/* /* アバウトここから */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+/* アバウトここまで */
+
+
+
+
+/* コースここから */
+.course{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.course-c{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.course-c-b{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-img{
+    width: 100%;
+}
+/* コースここまで */
+
+/* ニュースここから */
+.news{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-c{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.news-c-b{
+    margin-top:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+
+/* ニュースここまで */
+
+/* コンタクトここから */
+.contact{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-section-contact {
+    padding: 59px 0 120px
+}
+
+@media screen and (max-width: 768px) {
+    .p-section-contact {
+        padding: 32px 0 80px
+    }
+}
+
+.p-section-contact__header {
+    margin: 0 0 59px;
+    text-align: center
+}
+
+@media screen and (max-width: 768px) {
+    .p-section-contact__header {
+        margin: 0 0 50px;
+        text-align: left
+    }
+}
+
+.p-section-contact__body {
+    max-width: 640px;
+    margin: auto
+}
+
+.p-section-contact__paragraph {
+    margin-top: 21px
+}
+
+.c-form__list {
+    margin-bottom: 40px
+}
+
+@media screen and (max-width: 768px) {
+    .c-form__list {
+        margin-bottom: 24px
+    }
+}
+
+.c-form__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 24px
+}
+
+@media screen and (max-width: 768px) {
+    .c-form__item {
+        display: block;
+        margin-bottom: 36px
+    }
+}
+
+.c-form__item__multiple-field {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+@media screen and (max-width: 768px) {
+    .c-form__item__multiple-field {
+        margin-bottom: 24px
+    }
+}
+
+.c-form__label {
+    width: 110px;
+    min-width: 110px;
+    margin-right: 24px;
+    font-weight: bold;
+    text-align: right
+}
+
+@media screen and (max-width: 768px) {
+    .c-form__label {
+        width: 100%;
+        min-width: 100%;
+        margin: 0 0 20px;
+        text-align: left
+    }
+}
+
+.c-form__label--textarea {
+    padding-top: 16px
+}
+
+@media screen and (max-width: 768px) {
+    .c-form__label--textarea {
+        padding-top: 0
+    }
+}
+
+.c-form__input-field {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 388px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    font-size: 1.6rem
+}
+
+@media screen and (max-width: 768px) {
+    .c-form__input-field {
+        width: 100%
+    }
+}
+
+.c-form__radio-field {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    border-radius: 50%;
+    vertical-align: -2px;
+    background: #eee
+}
+
+.c-form__radio-field:checked {
+    background: #ffd61a
+}
+
+.c-form__radio-label {
+    display: inline-block;
+    margin-left: 16px
+}
+
+@media screen and (max-width: 768px) {
+    .c-form__radio-label {
+        font-size: 1.4rem
+    }
+}
+
+.c-form__submit-field {
+    text-align: center
+}
+
+@media screen and (max-width: 768px) {
+    .c-form-radio {
+        margin-bottom: 40px
+    }
+}
+
+.c-form-radio__item:not(:last-of-type) {
+    margin-bottom: 24px
+}
+
+@media screen and (max-width: 768px) {
+    .c-form-radio__item:not(:last-of-type) {
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-form-radio__item label {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+.c-button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 264px;
+    padding: 1.03125em 3.8125em;
+    border: none;
+    background: #ffd61a;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center
+}
+
+
+/* コンタクトここまで */
+
+
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+}
